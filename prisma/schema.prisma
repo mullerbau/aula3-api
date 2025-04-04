@@ -20,6 +20,8 @@ model Viagem {
   duracao     Int   @db.SmallInt
   dataSaida   DateTime  @default(now())
   preco       Decimal 
+  hotel       String @db.VarChar(100) @default("")
+  estrelas    Int @db.SmallInt() @default(0)
   @@map("Viagens")
 }
 

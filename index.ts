@@ -1,6 +1,7 @@
 import express from 'express'
 import filmesRoutes from './routes/viagens'
 import { PrismaClient } from '@prisma/client'
+import { z } from 'zod'
 
 const prisma = new PrismaClient()
 const app = express()
